@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 export default function Home() {
@@ -12,6 +13,12 @@ export default function Home() {
           height={38}
           priority
         />
+
+        {/* Nuevo botón agregado */}
+        <Button className="bg-blue-600 text-white hover:bg-blue-700">
+          ¡Hola desde DonTalento!
+        </Button>
+
         <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2 tracking-[-.01em]">
             Get started by editing{" "}
@@ -51,6 +58,7 @@ export default function Home() {
           </a>
         </div>
       </main>
+
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
